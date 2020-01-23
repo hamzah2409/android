@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:text="INPUT DATA MAHASISWA"
+        android:textStyle="bold" />
+   
+    <Button
+        android:id="@+id/buttonTambahMahasiswa"
+        
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/tambah"
+        android:textColor="#fff" />
+ 
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+ 
+        <ScrollView
+            android:id="@+id/verticalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+ 
+            <TableLayout
+                android:id="@+id/tabelMahasiswa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+ 
+</LinearLayout>
+
